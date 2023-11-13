@@ -1,0 +1,218 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Handjet&family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Playfair+Display:wght@400;700;900&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Ysabeau+SC:wght@400;800&display=swap');
+ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("background.jpg");
+    
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header{
+    height: 20vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+header a{
+    text-decoration: none;
+    padding-left: 65px;
+    font-weight: 800;
+    font-size: 35px;
+    color: #424242;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@keyframes image {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateY(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateY(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateY(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateY(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateY(-6px) rotate(-1.2deg);
+	}
+}
+
+.image{
+  padding-right: 100px;
+  
+  
+}
+.image img {
+    width: 450px;
+    animation: image 4s ease-in-out 0s infinite normal ;
+}
+.text{
+    margin-left: 65px;
+    margin-top: 55px;
+    color: #424242;
+    
+    
+}
+
+.text h1{
+    text-transform: uppercase;
+   
+}
+
+.text p{
+    padding-top: 30px;
+    font-size: medium;
+    padding-bottom: 41px;
+    font-family: 'Poppins', sans-serif;
+}
+/*buttons*/
+
+.btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: #de6b6d;
+    --btn-bg-2: #FBC3C4;
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    padding-top: 10px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px #FBC3C4);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+  button a{
+    text-decoration: none;
+    font-size: 18px;
+   
+    color: #424242;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  section {
+    padding-top: 100px;
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  @font-face {
+    font-family: sameer;
+    src: url("Wild\ Trails.ttf");
+  }
+  .rows {
+    margin-bottom: 20px;
+  }
+  .rows h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #424242;
+  }
+  
+  .image-fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-fav img {
+    max-width: 300px;
+    opacity: .8;
+    margin: 0 10px; 
+  }
+  
+  
+  
+  @media screen and (max-width: 450px) {
+    body{
+      background-position: center;
+    }
+    .name a{
+      font-size: 30px;
+      padding-left: 2px;
+    }
+    header a{
+      padding: 5px;
+      font-weight: 600;
+      font-size: 35px;
+  }
+  .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+    .image {
+      margin-top: 35px;
+      padding-right: 20px;
+    }
+    .image img {
+      width:100%;
+      
+    }
+    .text {
+      margin-left: 20px; 
+      margin-top: 20px; 
+    }
+    .image-fav img {
+      width: 100px;
+    }
+  }
+  
